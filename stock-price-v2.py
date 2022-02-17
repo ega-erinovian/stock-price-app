@@ -5,7 +5,7 @@ import pandas as pd
 st.write("""
     # Simple Stock Price App V2
 
-    Shown are stock **closing price** and **volume** of Apple
+    Shown are stock **closing price** and **volume** of Google
 """)
 
 # get date input from user
@@ -14,7 +14,7 @@ startDate = str(st.sidebar.date_input("Enter start date"))
 endDate = str(st.sidebar.date_input("Enter end date"))
 
 # define the ticker symbol
-tickerSymbol = 'APPL'
+tickerSymbol = 'GOOGL'
 # get data on this ticker
 tickerData = yf.Ticker(tickerSymbol)
 # get the historical prices of this ticker
